@@ -27,7 +27,6 @@ const Navbar = () => {
                 </Typography>
             </Link>
             <SearchBar/>
-
         </Stack>
     );
 }

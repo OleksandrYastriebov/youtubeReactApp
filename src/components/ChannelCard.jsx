@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import { demoProfilePicture, demoChannelUrl } from "../utils/constants";
 import { avatar } from "../assets"
-import channelDetail from "./ChannelDetail";
 
 const ChannelCard = ({channelDetail}) => {
     const channelId = channelDetail?.id?.channelId;

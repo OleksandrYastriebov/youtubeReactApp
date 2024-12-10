@@ -94,7 +94,7 @@ const VideoDetail = () => {
                                            justifyContent={{xs: "start", md: "center"}}
                                            sx={{mb: {xs: "20px", md: 0}}}>
                                         <Avatar alt={channelTitle} src={channelImage || avatar}
-                                                 sx={{mr: "16px"}}/>
+                                                sx={{mr: "16px"}}/>
 
                                         {channelTitle}
                                         <CheckCircle sx={{

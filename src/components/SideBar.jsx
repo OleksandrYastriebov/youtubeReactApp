@@ -10,8 +10,7 @@ const SideBar = ({selectedCategory, setSelectedCategory}) => {
                 overflowY: "auto",
                 height: {sx: "auto", md: "96%"},
                 flexDirection: {md: "column"},
-            }}
-        >
+            }}>
             {categories.map(({name, icon}) => (
                 <button key={name}
                         className="category-btn"
@@ -22,13 +21,12 @@ const SideBar = ({selectedCategory, setSelectedCategory}) => {
                             background: name === selectedCategory && "#FC1503"
                         }}>
                     <span style={{color: name === selectedCategory && "#FFF"}}
-                        className="category-icon">
+                          className="category-icon">
                         {icon}
                     </span>
                     <span>{name}</span>
                 </button>
             ))}
-
         </Stack>
     );
 }

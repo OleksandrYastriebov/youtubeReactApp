@@ -33,14 +33,15 @@ const PlaylistCard = ({playlistDetail: {id: {playlistId}, snippet}}) => {
                 height: "80px"
             }}>
                 <Link to={playlistId ? `/video/${playlistId}` : demoVideoUrl}>
-                    <Typography variant="subtitle1" color="#FFF" fontWeight="bold" title={snippet?.title || demoVideoTitle}>
+                    <Typography variant="subtitle1" color="#FFF" fontWeight="bold"
+                                title={snippet?.title || demoVideoTitle}>
                         {snippet?.title.length > 60 ? snippet.title.slice(0, 60) + "..." : snippet?.title || demoVideoTitle.slice(0, 60)}
                     </Typography>
                 </Link>
                 <Link to={snippet?.playlistId ? `/channel/${snippet?.playlistId}` : demoChannelUrl}>
-                    <Typography variant="subtitle2"  fontWeight="bold" sx={{
+                    <Typography variant="subtitle2" fontWeight="bold" sx={{
                         color: "gray",
-                        "&:hover" : {color: "lightgray"}
+                        "&:hover": {color: "lightgray"}
                     }}>
                         {snippet?.channelTitle || demoChannelTitle}
                         <CheckCircle sx={{
